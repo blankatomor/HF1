@@ -1,0 +1,72 @@
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobil nézethez optimalizált */
+.project-grid {
+    display: block;
+}
+
+.project {
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Közepes képernyőkre (tabletek) */
+@media (min-width: 768px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* Nagy képernyőkre (desktop) */
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+}
